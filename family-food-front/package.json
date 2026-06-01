@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@dcloudio/uni-ui": "^1.5.12",
+    "@qiun/ucharts": "^2.5.0-20230101",
+    "echarts": "^6.0.0",
+    "vue": "^3.3.4",
+    "vuex": "^4.1.0"
+  }
+}

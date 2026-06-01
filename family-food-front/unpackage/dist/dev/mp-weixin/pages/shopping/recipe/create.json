@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "创建食谱",
+  "usingComponents": {
+    "loading": "../../../components/common/Loading",
+    "toast": "../../../components/common/Toast"
+  }
+}

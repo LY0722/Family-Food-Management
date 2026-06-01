@@ -1,0 +1,123 @@
+
+.notifications-page.data-v-98a6f22d {
+  min-height: 100vh;
+  background: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+}
+.page-header.data-v-98a6f22d {
+  background: white;
+  padding: 32rpx 24rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0,0,0,0.08);
+}
+.page-title.data-v-98a6f22d {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 8rpx;
+}
+.page-desc.data-v-98a6f22d {
+  font-size: 26rpx;
+  color: #666;
+}
+.page-content.data-v-98a6f22d {
+  flex: 1;
+  padding: 20rpx;
+}
+.setting-section.data-v-98a6f22d {
+  background: white;
+  border-radius: 16rpx;
+  padding: 24rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0,0,0,0.06);
+}
+.section-title.data-v-98a6f22d {
+  margin-bottom: 24rpx;
+}
+.title-text.data-v-98a6f22d {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 8rpx;
+}
+.title-desc.data-v-98a6f22d {
+  font-size: 24rpx;
+  color: #999;
+}
+.setting-item.data-v-98a6f22d {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+.setting-item.data-v-98a6f22d:last-child {
+  border-bottom: none;
+}
+.item-left.data-v-98a6f22d {
+  flex: 1;
+}
+.item-name.data-v-98a6f22d {
+  font-size: 28rpx;
+  color: #333;
+  display: block;
+  margin-bottom: 4rpx;
+}
+.item-desc.data-v-98a6f22d {
+  font-size: 24rpx;
+  color: #999;
+}
+.item-right.data-v-98a6f22d {
+  display: flex;
+  gap: 12rpx;
+}
+.day-option.data-v-98a6f22d {
+  padding: 12rpx 24rpx;
+  background: #f5f7fa;
+  border-radius: 12rpx;
+  border: 2rpx solid transparent;
+}
+.day-option.active.data-v-98a6f22d {
+  background: #e6f7ff;
+  border-color: #1890ff;
+}
+.option-text.data-v-98a6f22d {
+  font-size: 24rpx;
+  color: #666;
+}
+.day-option.active .option-text.data-v-98a6f22d {
+  color: #1890ff;
+  font-weight: 600;
+}
+.picker-value.data-v-98a6f22d {
+  display: flex;
+  align-items: center;
+  gap: 8rpx;
+  padding: 12rpx 20rpx;
+  background: #f5f7fa;
+  border-radius: 12rpx;
+}
+.value-text.data-v-98a6f22d {
+  font-size: 26rpx;
+  color: #333;
+}
+.arrow-icon.data-v-98a6f22d {
+  width: 24rpx;
+  height: 24rpx;
+}
+.page-footer.data-v-98a6f22d {
+  background: white;
+  padding: 20rpx 24rpx;
+  box-shadow: 0 -2rpx 12rpx rgba(0,0,0,0.08);
+}
+.save-btn.data-v-98a6f22d {
+  width: 100%;
+  height: 88rpx;
+  background: linear-gradient(135deg, #07c160, #059e4a);
+  color: white;
+  border-radius: 44rpx;
+  font-size: 28rpx;
+  border: none;
+}

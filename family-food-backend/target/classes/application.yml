@@ -1,0 +1,73 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: family-food-backend
+
+  # ========== 数据库配置 ==========
+  datasource:
+    url: jdbc:mysql://localhost:3306/family_food_db?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: "032915"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      connection-timeout: 30000
+      maximum-pool-size: 10
+      minimum-idle: 5
+
+  # ========== JPA配置（Spring Boot 4.x 修复） ==========
+  jpa:
+    hibernate:
+      ddl-auto: update  # 第一次启动用update自动建表
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        # Spring Boot 4.x + Hibernate 7.x 使用这个方言
+        dialect: org.hibernate.dialect.MySQLDialect
+        jdbc:
+          batch_size: 20
+          lob:
+            non_contextual_creation: true
+    # 移除 database-platform 配置，让Hibernate自动检测
+
+  # ========== 解决静态资源与Controller冲突的关键配置 ==========
+  mvc:
+    static-path-pattern: /static/**  # 添加这一行：限制静态资源的URL模式
+    throw-exception-if-no-handler-found: true  # 添加这一行：没有找到handler时抛出异常
+
+  web:
+    resources:
+      add-mappings: false  # 添加这一行：禁用默认的静态资源映射
+
+  # ========== 其他配置 ==========
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+file:
+  upload-dir: ./uploads
+
+jwt:
+
+wx:
+  miniapp:
+    appid: wxbcf26a185e8844d0
+    secret: 91bfe688033bbbafb5bc63faf511a727
+    # 微信登录相关接口
+    code2session-url: https://api.weixin.qq.com/sns/jscode2session
+
+# ========== 日志配置 ==========
+logging:
+  level:
+    root: INFO
+    com.jdzu.familyfood: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE
+    org.springframework.web: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n"

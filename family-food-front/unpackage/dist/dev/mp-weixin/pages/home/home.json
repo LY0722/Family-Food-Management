@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "recipe-and-inventory-card": "./RecipeAndInventoryCard"
+  }
+}

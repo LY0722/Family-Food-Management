@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "编辑资料",
+  "usingComponents": {
+    "loading": "../../components/common/Loading",
+    "toast": "../../components/common/Toast"
+  }
+}

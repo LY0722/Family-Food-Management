@@ -1,0 +1,176 @@
+{
+  "pages": [
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationBarTitleText": "登录"
+      }
+    },
+
+    {
+      "path": "pages/login/register",
+      "style": {
+        "navigationBarTitleText": "注册"
+      }
+    },
+    {
+      "path": "pages/home/home",
+      "style": {
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+
+    {
+      "path": "pages/shopping/shopping",
+      "style": {
+        "navigationBarTitleText": "采购清单",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/shopping/shoppingHistory",
+      "style": {
+        "navigationBarTitleText": "采购历史"
+      }
+    },
+    {
+      "path": "pages/shopping/recipe/recipe",
+      "style": {
+        "navigationBarTitleText": "食谱管理"
+      }
+    },
+        {
+      "path": "pages/shopping/recipe/create",
+      "style": {
+        "navigationBarTitleText": "创建食谱"
+      }
+    },
+    {
+      "path": "pages/profile/profile",
+      "style": {
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/profile/edit",
+      "style": {
+        "navigationBarTitleText": "编辑资料"
+      }
+    },
+    {
+      "path": "pages/profile/settings/setting",
+      "style": {
+        "navigationBarTitleText": "设置"
+      }
+    },
+    {
+      "path": "pages/profile/settings/notifications",
+      "style": {
+        "navigationBarTitleText": "通知设置"
+      }
+    },
+    {
+      "path": "pages/profile/settings/feedback",
+      "style": {
+        "navigationBarTitleText": "意见反馈"
+      }
+    },
+    {
+      "path": "pages/profile/reports/reports",
+      "style": {
+        "navigationBarTitleText": "数据报告"
+      }
+    },
+    {
+      "path": "pages/profile/reports/weekly",
+      "style": {
+        "navigationBarTitleText": "周报告"
+      }
+    },
+    {
+      "path": "pages/profile/reports/monthly",
+      "style": {
+        "navigationBarTitleText": "月报告"
+      }
+    },
+    {
+      "path": "pages/profile/family/family",
+      "style": {
+        "navigationBarTitleText": "家庭管理"
+      }
+    },
+    {
+      "path": "pages/profile/family/add-member",
+      "style": {
+        "navigationBarTitleText": "添加家庭成员"
+      }
+    },
+    {
+      "path": "pages/profile/family/create",
+      "style": {
+        "navigationBarTitleText": "创建家庭"
+      }
+    },
+     {
+      "path": "pages/profile/family/add-family",
+      "style": {
+        "navigationBarTitleText": "添加家庭"
+      }
+    },
+    {
+      "path": "pages/home/ai/chat",
+      "style": {
+        "navigationBarTitleText": "AI聊天"
+      }
+    },
+
+    {
+      "path": "pages/home/history",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "历史记录"
+      }
+    },
+    {
+      "path": "pages/home/chart",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "统计分析"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "家庭食材管家",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f8f9fa"
+  },
+  "tabBar": {
+    "color": "#7a7e83",
+    "selectedColor": "#07c160",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "static/icons/home.png",
+        "selectedIconPath": "static/icons/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shopping/shopping",
+        "iconPath": "static/icons/shopping.png",
+        "selectedIconPath": "static/icons/shopping-active.png",
+        "text": "采购"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "iconPath": "static/icons/profile.png",
+        "selectedIconPath": "static/icons/profile-active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}
