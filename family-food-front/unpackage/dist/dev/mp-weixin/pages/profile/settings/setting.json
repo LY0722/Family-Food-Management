@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "设置",
-  "usingComponents": {
-    "loading": "../../../components/common/Loading",
-    "toast": "../../../components/common/Toast"
-  }
-}

@@ -1,7 +1,11 @@
-# 家庭食材管家系统
+# 家庭食材管家系统 (Family Food Management)
 
 ## 系统简介
 本系统是一个基于Spring Boot + uni-app的家庭食材管理应用，提供食材库存管理、采购清单、智能推荐等功能。
+
+## 项目结构
+- `backend/`: 基于 Spring Boot 的 Java 后端服务
+- `frontend/`: 基于 uni-app 的跨平台前端应用
 
 ## 系统要求
 - JDK 17
@@ -17,16 +21,16 @@
 CREATE DATABASE family_food_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 # 导入数据库脚本
-mysql -u root -p family_food_db < family-food-backend/database-dump/database.sql
+# 脚本位于 backend/database-dump/database.sql
 ```
 
 ### 2. 后端安装
 ```bash
-cd family-food-backend
+cd backend
 
 # 修改数据库配置（如需要）
 # 编辑 src/main/resources/application.yml
-# 修改数据库用户名和密码
+# 修改数据库用户名和密码 (YOUR_DATABASE_PASSWORD_HERE)
 
 # 启动后端服务
 mvn spring-boot:run
@@ -36,7 +40,7 @@ mvn spring-boot:run
 
 ### 3. 前端安装
 ```bash
-cd family-food-front
+cd frontend
 
 # 安装依赖
 npm install
@@ -73,7 +77,7 @@ npm install
 ## 数据库配置信息
 - 数据库名：family_food_db
 - 数据库用户名：root
-- 数据库密码：032915
+- 数据库密码：请根据实际情况配置
 - 后端端口：8080
 
 ## 注意事项

@@ -1,1 +1,0 @@
-<view wx:if="{{a}}" class="toast-wrapper data-v-b7aa574d"><view class="{{['toast-container', 'data-v-b7aa574d', d]}}"><text class="toast-icon data-v-b7aa574d">{{b}}</text><text class="toast-message data-v-b7aa574d">{{c}}</text></view></view>

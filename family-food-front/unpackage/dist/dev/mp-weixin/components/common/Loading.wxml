@@ -1,1 +1,0 @@
-<view wx:if="{{a}}" class="loading-container data-v-35442499"><view class="loading-mask data-v-35442499"></view><view class="loading-content data-v-35442499"><view class="loading-spinner data-v-35442499"></view><text class="loading-text data-v-35442499">{{b}}</text></view></view>
